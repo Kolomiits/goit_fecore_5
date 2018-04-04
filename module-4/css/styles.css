@@ -38,8 +38,8 @@ img {
 }
 
 img.product-image {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 75%;
+  max-height: 75%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -67,16 +67,14 @@ img.product-image {
 h2 {
   margin: 0;
   padding: 0;
- margin-top: 105px;
+  margin-top: 105px;
   font-size: 48px;
   line-height: 114px;
   color: #515151;
   text-transform: uppercase;
- 
 }
 
 h2::after {
-
   content: "";
   display: block;
   margin: 0 auto;
@@ -87,13 +85,15 @@ h2::after {
   margin-bottom: 82px;
 }
 
-
-
 main {
   text-align: center;
 }
 
-/* MAIN NAV SECTION */
+.main-content {
+  height: 1715px;
+}
+
+/*  NAVIGATION SECTION */
 
 .page-nav {
   margin: 0;
@@ -111,7 +111,6 @@ main {
   padding: 0;
   margin-top: 2px;
   text-transform: uppercase;
-  
 }
 
 .main-nav a {
@@ -134,7 +133,7 @@ main-nav a:focus {
   color: #ff0000;
 }
 
-/* MAIN */
+/* MAIN CONTENT */
 
 /* PRODUCTS */
 
@@ -148,7 +147,6 @@ main-nav a:focus {
 }
 
 .products-item {
-  
   float: left;
   width: 255px;
   height: auto;
@@ -161,7 +159,6 @@ main-nav a:focus {
 }
 
 .product-name {
-  
   width: 201px;
   padding: 0 0 0 15px;
   background: rgba(255, 255, 255, 1);
@@ -171,7 +168,6 @@ main-nav a:focus {
 }
 
 .products-item a {
-
   display: block;
   width: 255px;
   height: 322px;
@@ -179,7 +175,6 @@ main-nav a:focus {
 }
 
 .link-item {
- 
   margin: auto;
   padding: 1px;
 }
@@ -193,12 +188,10 @@ main-nav a:focus {
 }
 
 .product-image {
-
   margin: 0px;
 }
 
 .product-name {
-  
   display: block;
   height: 40px;
   float: left;
@@ -261,8 +254,12 @@ main-nav a:focus {
 
 /* NEWS */
 
-.news {
+.latest-news {
+  height: 732px;
+  width: 100%;
+}
 
+.news {
   margin: 0;
   padding: 0;
 }
@@ -306,10 +303,7 @@ main-nav a:focus {
 
 .news-item-img {
   margin-bottom: 14px;
-  
 }
-
-
 
 .more {
   margin: 0;
