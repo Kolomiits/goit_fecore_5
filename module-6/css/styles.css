@@ -1,0 +1,342 @@
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1202px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  margin-bottom: 80px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90px;
+}
+
+.item-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 492px;
+}
+
+.item-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  transition: all 0.2s linear;
+  color: rgb(149, 225, 211);
+}
+
+.item-nav a:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(243, 129, 129);
+}
+
+.item-nav a::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  transition: opacity 0.2s linear;
+  opacity: 0;
+  cursor: auto;
+}
+
+.item-nav a:hover::after,
+.item-nav a:focus::after {
+  opacity: 1;
+}
+
+.caption {
+  margin: 0;
+  text-align: center;
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(51, 51, 51);
+}
+
+h2 {
+  margin-top: -10px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  line-height: 100px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+
+h2::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background: rgb(243, 129, 129);
+}
+
+.services {
+  margin-bottom: 100px;
+}
+
+.list-services {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  min-height: 256px;
+}
+
+.item-list-services {
+  position: relative;
+  justify-content: space-between;
+  padding-left: 80px;
+  flex-basis: 380px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.item-list-services h4 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+h4::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 20px;
+  left: 20px;
+}
+
+.item-list-services span {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+}
+
+.item-01::after {
+  background-image: url(../img/service/alarm.png);
+}
+
+.item-02::after {
+  background-image: url(../img/service/linegraph.png);
+}
+
+.item-03::after {
+  background-image: url(../img/service/computer.png);
+}
+
+.item-04::after {
+  background-image: url(../img/service/book.png);
+}
+
+.item-05::after {
+  background-image: url(../img/service/home.png);
+}
+
+.item-06::after {
+  background-image: url(../img/service/aim.png);
+}
+
+.team {
+  margin-bottom: 100px;
+}
+
+.team-family {
+  margin-bottom: 100px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+}
+
+.implementator {
+  margin-bottom: 25px;
+}
+
+.list-team {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+
+.developer-name {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+.developer-position {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgb(153, 153, 153);
+}
+
+.item-list-team {
+  position: relative;
+}
+
+.item-list-team:hover .team-gradient {
+  visibility: visible;
+}
+
+.team-gradient {
+  display: flex;
+  position: absolute;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 470px;
+  top: -10px;
+  left: -10px;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(180deg, rgb(243, 129, 129) 0%, rgb(252, 227, 138) 100%);
+  box-shadow: 10px 10px rgba(149, 225, 211, 1);
+  transition: opacity 0.2s linear;
+  opacity: 0.9;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: space-between;
+  width: 224px;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 54px;
+  height: 54px;
+  background: #fce38a;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(149, 225, 211);
+}
+
+.facebook {
+  background-image: url(../img/social/facebook.png);
+}
+
+.twitter {
+  background-image: url(../img/social/twitter.png);
+}
+
+.pinterest {
+  background-image: url(../img/social/pinterest.png);
+}
+
+.instagram {
+  background-image: url(../img/social/instagram.png);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 64px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  box-shadow: 0px -2px rgb(231, 231, 231);
+}
+
+footer a {
+  text-decoration-line: none;
+  color: rgb(243, 129, 129);
+}
+
+input {
+  height: 40px;
+  padding: 15px;
+  flex-basis: 229px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(231, 231, 231);
+  border: solid 1px rgb(231, 231, 231);
+}
+
+button {
+  border: none;
+  height: 40px;
+  flex-basis: 151px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgb(149, 225, 211);
+}
