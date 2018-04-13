@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'WisdomScriptAJ';
+  src: url('../fonts/WisdomScriptAJ.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/roboto-slab-v7-latin-regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans-v15-latin-regular.woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans-v15-latin-700italic.woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-v12-latin-regular.woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-v12-latin-600.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+span {
+  max-width: 275px;
+}
+
+.wrapper {
+  width: 940px;
+  margin: auto;
+}
+
+.site-logo {
+  font-family: "WisdomScriptAJ", sans-serif;
+  color: rgb(242, 208, 72);
+  font-size: 26px;
+  line-height: 41px;
+  text-align: left;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-basis: 486px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  line-height: 41px;
+  text-align: center;
+}
+
+.main-navigation a {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: rgb(242, 208, 72);
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.descending {
+  color: rgb(118, 118, 118);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.services-list-item h4 {
+  color: rgb(34, 34, 34);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.services-list-item span {
+  color: rgb(118, 118, 118);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.services-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-list-item h4::before {
+  display: block;
+  content: "";
+  width: 70px;
+  height: 70px;
+  border: 3px solid rgb(254, 209, 54);
+  padding: 15px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.services-list-item:nth-child(1) h4::before {
+  background-image: url("../img/Icon-Basket.png");
+}
+
+.services-list-item:nth-child(2) h4::before {
+  background-image: url("../img/Icon-Laptop.png");
+}
+
+.services-list-item:nth-child(3) h4::before {
+  background-image: url("../img/Icon-Locked.png");
+}
+
+.services {
+  margin-bottom: 110px;
+}
+
+.contact {
+  position: relative;
+  padding-top: 100px;
+  min-height: 676px;
+  min-width: 940px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 94% 96%;
+  background-color: rgb(34, 34, 34);
+  background-image: url("../img/Map-Image.png");
+}
+
+.contact h2 {
+  color: rgb(255, 255, 255);
+}
+
+input {
+  width: 456px;
+  height: 52px;
+}
+
+textarea {
+  width: 456px;
+  height: 210px;
+  resize: none;
+}
+
+input:hover:valid,
+textarea:hover:valid {
+  outline: 3px solid rgb(50, 237, 50);
+}
+
+input:hover:invalid,
+textarea:hover:invalid {
+  outline: 3px solid rgb(221, 13, 13);
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 940px;
+  height: 210px;
+}
+
+.contact-wrapper input,
+textarea {
+  padding: 15px;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  border: none;
+  border-radius: 1%;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: rgb(186, 186, 186);
+}
+
+textarea::placeholder {
+  color: rgb(186, 186, 186);
+}
+
+.button {
+  display: flex;
+  align-items: baseline;
+  margin: 0 auto;
+  justify-content: center;
+  transform: translateY(25px);
+  padding: 0px;
+}
+
+button {
+  width: 242px;
+  height: 68px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(242, 208, 72);
+  padding: 15px;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
