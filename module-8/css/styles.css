@@ -201,15 +201,15 @@ button {
 }
 
 .img-partner-2::after {
-  background: rgb(28, 215, 173);
-  background-image: url("../img/coffee.png");
+  background: rgb(255, 165, 7);
+  background-image: url("../img/beaker.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .img-partner-3::after {
-  background: rgb(255, 165, 7);
-  background-image: url("../img/beaker.png");
+  background: rgb(28, 215, 173);
+  background-image: url("../img/coffee.png");
   background-repeat: no-repeat;
   background-position: center;
 }
