@@ -56,11 +56,6 @@ button {
   padding: 10px;
 }
 
-.header-wrapper__nav {
-  display: flex;
-  flex-direction: row;
-}
-
 .nav-main__btn {
   margin-bottom: 130px;
 }
@@ -143,6 +138,7 @@ button {
 
 .partners-list__item {
   max-width: 220px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 

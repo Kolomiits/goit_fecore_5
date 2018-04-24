@@ -2,19 +2,7 @@
 
 @media (max-width: 747px) {
     .header-wrapper {
-        margin-bottom: 58px;
-    }
-    .main-wrapper__partners--list {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .partner-2 {
-        order: 1;
-    }
-    .partner-4 {
-        order: 1;
+        margin-bottom: 76px;
     }
 }
 
@@ -39,12 +27,17 @@
 @media (min-width: 748px) and (max-width: 941px) {
     .partners-list__item {
         flex-basis: 263px;
+        padding: 0 0;
     }
     .main-wrapper__partners--list {
         width: 470px;
-        .main-wrapper {
-            margin-bottom: 42px;
-        }
+        margin-bottom: 42px;
+    }
+    .partner-2 {
+        order: 1;
+    }
+    .partner-4 {
+        order: 1;
     }
 }
 
