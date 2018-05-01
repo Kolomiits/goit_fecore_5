@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'WisdomScriptAJ';
+    src: url('../fonts/WisdomScriptAJ.woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/roboto-slab-v7-latin-regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans-v15-latin-regular.woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans-v15-latin-700italic.woff2');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin-regular.woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin-600.woff2');
+    font-weight: 700;
+    font-style: normal;
+  }

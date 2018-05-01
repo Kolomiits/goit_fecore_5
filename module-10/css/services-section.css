@@ -1,0 +1,56 @@
+/*Services*/
+.services-list__item {
+    -ms-flex-preferred-size: 390px;
+    flex-basis: 390px;
+}
+
+.services-list__item {
+    margin: 0 auto;
+}
+
+.content-container {
+    width: 335px;
+}
+
+.services-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    text-decoration: none;
+    padding: 40px 0;
+}
+
+.services-list__link::before {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin: 0 auto;
+    content: "";
+    width: 32px;
+    height: 32px;
+}
+
+.services-list__link--photography::before {
+    background-image: url("../img/icon/icon-alarm.svg");
+}
+
+.services-list__link--web-design::before {
+    background-image: url("../img/icon/icon-graph.svg");
+}
+
+.services-list__link--creativity::before {
+    background-image: url("../img/icon/icon-computer.svg");
+}
+
+.services-list__link--seo::before {
+    background-image: url("../img/icon/icon-book.svg");
+}
+
+.services-list__link--css_html::before {
+    background-image: url("../img/icon/icon-home.svg");
+}
+
+.services-list__link--digital::before {
+    background-image: url("../img/icon/icon-aim.svg");
+}

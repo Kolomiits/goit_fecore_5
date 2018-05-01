@@ -1,0 +1,103 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400');
+@import url(media.css);
+@import url(header-section.css);
+@import url(header.css);
+@import url(services-section.css);
+@import url(team-section.css);
+@import url(footer.css);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.icons-container {
+    position: relative;
+    text-align: center;
+}
+
+.box-icon {
+    cursor: pointer;
+}
+
+.btn {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*Main*/
+.section__title--services::after,
+.section__title--team::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+    background: #f38181;
+}
+
+.services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item__title {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
+.list-item__desc {
+    margin: 0;
+    color: #999999;
+    max-width: 275px;
+}

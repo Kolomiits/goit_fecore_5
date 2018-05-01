@@ -1,0 +1,60 @@
+/*Footer*/
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 60px;
+    border-top: 1px solid #e5e5e5;
+   
+}
+
+.container-footer__link--color {
+    color: #95e1d3;
+    text-decoration: none;
+    -webkit-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+#input-email {
+    
+    height: 38px;
+    color: #cccccc;
+    font-style: italic;
+    font-weight: 300;
+    border-color: #e7e7e7;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 0 0 10px;
+    outline: 0;
+}
+
+#input-email::placeholder {
+    color: #cccccc;
+}
+
+.footer-subscribe__btn {
+    width: 150px;
+    height: 40px;
+    background: #95e1d3;
+    border-style: none;
+    cursor: pointer;
+    outline: 0;
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+
+.footer-subscribe__btn--hover:hover{
+    background-color: #f38181;
+}
+.container-footer__link--hover:hover {
+    color: #f38181;
+}
