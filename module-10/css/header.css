@@ -1,6 +1,7 @@
-.wrapper-header {
+.wrapper {
     width: 100%;
-    min-height: 1000px;
+    height: 1000px;
+   
     background: -webkit-gradient( linear, left top, left bottom, from(0), color-stop(0%, #fce38ae6), to(#f38181e6)), url(../img/banner/eagle.jpg) no-repeat center center;
     background: -webkit-linear-gradient( 0, #fce38ae6 0%, #f38181e6 100%), url(../img/banner/eagle.jpg) no-repeat center center;
     background: -o-linear-gradient( 0, #fce38ae6 0%, #f38181e6 100%), url(../img/banner/eagle.jpg) no-repeat center center;
@@ -45,7 +46,7 @@
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 700px;
     height: 30px;
 }

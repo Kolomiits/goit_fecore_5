@@ -6,7 +6,6 @@
 @import url(services-section.css);
 @import url(team-section.css);
 @import url(footer.css);
-
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -43,12 +42,18 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-.wrapper {
-    max-width: 1200px;
+.wrapper-ecto {
+    height: 1000px;
+   width: 1200px;
     margin: 0 auto;
 }
-
+.wrapper-main{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
 /*Header*/
+
 .icons-container {
     position: relative;
     text-align: center;
@@ -67,6 +72,7 @@ input[type="radio"].visually-hidden {
 }
 
 /*Main*/
+
 .section__title--services::after,
 .section__title--team::after {
     display: block;
