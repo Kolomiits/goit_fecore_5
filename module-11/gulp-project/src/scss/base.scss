@@ -1,0 +1,12 @@
+body {
+  box-sizing: border-box;
+  font-family: $main-font-stack;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
